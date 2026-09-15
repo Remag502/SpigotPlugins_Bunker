@@ -1,0 +1,11 @@
+name: Release Candidate Workflow
+
+on:
+  push:
+    tags:
+      - 'v*-RC*'
+      - '*-rc*'
+
+jobs:
+  rc:
+    uses: Battlegrounds-Development/build-logic/.github/workflows/release-candidate.yml@main

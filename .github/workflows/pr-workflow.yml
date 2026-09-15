@@ -1,0 +1,9 @@
+name: CI / PR Workflow
+
+on:
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    uses: Battlegrounds-Development/build-logic/.github/workflows/ci.yml@main
