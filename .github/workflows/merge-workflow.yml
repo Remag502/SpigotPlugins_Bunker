@@ -1,0 +1,9 @@
+name: Merge / Snapshot Workflow
+
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  snapshot:
+    uses: Battlegrounds-Development/build-logic/.github/workflows/merge-workflow.yml@main
